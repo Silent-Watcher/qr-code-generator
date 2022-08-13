@@ -13,22 +13,22 @@
   <div class="container_fluid"> 
     <div class="container"> 
       <div class="row">
-        <header class="col-12 d-flex flex-column justify-content-center" id="main_heading">
-          <h1>Code Generator </h1>
-          <h3>Enter your details to QR code </h3>
+        <header class="col-12 d-flex flex-column justify-content-end" id="main_heading">
+          <h1 class="user-select-none">Code Generator </h1>
+          <h3 class="user-select-none">Enter your details to QR code </h3>
         </header>
       </div>
       <div class="row">
-        <section class="col-6 d-flex justify-content-around align-items-center" id="tools">
+        <section class="col-12 col-xl-6 d-flex justify-content-around align-items-end" id="tools">
           <section class="position-relative w-75" id="input_section">
             <label class="position-absolute" for="url">your url</label>
             <input class="p-3 w-100 rounded-pill" id="url" type="text" placeholder="example: https://google.com" autocomplete="off">
           </section>
-          <section id="cta_wrapper">
-            <button class="fs-5 border-0" id="generate_button">Get QR Code</button>
+          <section class="pb-2" id="cta_wrapper">
+            <button class="fs-5 border-0 user-select-none disabled" id="generate_button">Get QR Code</button>
           </section>
         </section>
-        <main class="col-6 d-flex justify-content-center align-items-center" id="qr_code"></main>
+        <main class="col-12 col-xl-6 d-flex justify-content-center align-items-center" id="qr_code"></main>
       </div>
     </div>
   </div>

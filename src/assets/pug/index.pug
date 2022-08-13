@@ -5,16 +5,16 @@ html(lang="en")
         .container_fluid 
             .container 
                 .row
-                    header#main_heading.col-12.d-flex.flex-column.justify-content-center
-                        h1 Code Generator 
-                        h3 Enter your details to QR code 
+                    header#main_heading.col-12.d-flex.flex-column.justify-content-end
+                        h1.user-select-none Code Generator 
+                        h3.user-select-none Enter your details to QR code 
                 .row
-                    section#tools.col-6.d-flex.justify-content-around.align-items-center
+                    section#tools.col-12.col-xl-6.d-flex.justify-content-around.align-items-end
                         section#input_section.position-relative.w-75
                             label(for="url").position-absolute your url
                             input#url(type="text" placeholder='example: https://google.com' autocomplete="off").p-3.w-100.rounded-pill
-                        section#cta_wrapper
-                            button#generate_button.fs-5.border-0 Get QR Code
-                    main#qr_code.col-6.d-flex.justify-content-center.align-items-center
-                            
+                        section#cta_wrapper.pb-2
+                            button#generate_button.fs-5.border-0.user-select-none.disabled Get QR Code
+                    main#qr_code.col-12.col-xl-6.d-flex.justify-content-center.align-items-center
+
     include includes/_scripts
