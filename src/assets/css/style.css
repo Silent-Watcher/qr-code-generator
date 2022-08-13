@@ -107,4 +107,11 @@ body {
 }
 .disabled:hover {
   cursor: not-allowed, auto !important;
+}
+
+#copyright {
+  font-weight: bold;
+}
+#copyright a {
+  color: #99145b;
 }/*# sourceMappingURL=style.css.map */
